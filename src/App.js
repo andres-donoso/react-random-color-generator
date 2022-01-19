@@ -37,16 +37,11 @@ const App = () => {
         zoom: 3,
       }}
     >
+      {' '}
+      Generated Color: {hex}
       <h1>{hex}</h1>
       <button onClick={randomizedHex}>Generate</button>
-
-      <button
-        style={{
-          backgroundColor: hex,
-        }}
-      >
-        <div> Generated Color: {hex}</div>
-      </button>
+      <button>Generated Color: {hex}</button>
     </div>
   );
 };
