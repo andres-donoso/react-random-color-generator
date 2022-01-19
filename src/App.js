@@ -3,52 +3,51 @@ import './App.css';
 import randomColor from 'randomcolor';
 import React, { useState } from 'react';
 
-const App = () => {
+export default function App() {
   const [hex, setHex] = useState('#ffffff');
-  // const [luminosity, setLuminosity] = useState('');
-  // const [hue, setHue] = useState('');
-
-  // const randomizedHex = () => {
-  //   const color = randomColor();
-  // luminosity: process.argv[2],
-  // hue: process.argv[3],
-
-  // const color = getRandomColor(), {
-  //   color = "hsl(" + Math.random() * 360 + ", 100%, 75%)"
-  //   return color;
-  // setHex(color);
-  // setLuminosity(process.argv[2]);
-  // setHue(process.argv[3]);
-  // };
-
-  // });
-  // const luminosity =
-  // const hue =
-
-  // '#' + Math.floor(Math.random() * 16777215).toString(16);
 
   return (
-    <div
-      className="App"
-      style={{
-        backgroundColor: hex,
-      }}
-    >
+    <div className="App">
+      <h1 class="myHeading">Random Color Generator</h1>
+      <button onClick={() => setHex(randomColor())}>Generate</button>
       <div
+        class="myDiv"
         style={{
           backgroundColor: hex,
-          minHeight: '33.34vh',
-          overflow: 'hidden',
-          zoom: 3,
+          height: '400px',
+          margin: '100px',
+          padding: '50px',
+          transition: 'all 0.5s',
         }}
       >
-        <h1>Random Color Generator</h1>
-        <button onClick={() => setHex(randomColor())}>Generate</button>
         Generated Color: {hex}
       </div>
     </div>
   );
-};
+}
+// const [luminosity, setLuminosity] = useState('');
+// const [hue, setHue] = useState('');
+// const App = () => {
+// const randomizedHex = () => {
+//   const color = randomColor();
+// luminosity: process.argv[2],
+// hue: process.argv[3],
+
+// const color = getRandomColor(), {
+//   color = "hsl(" + Math.random() * 360 + ", 100%, 75%)"
+//   return color;
+// setHex(color);
+// setLuminosity(process.argv[2]);
+// setHue(process.argv[3]);
+// };
+
+// });
+// const luminosity =
+// const hue =
+
+// '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+/* <input type="text" value={hue} onChange={() => setLuminosity()} /> */
 
 // STYLED COMPONENTS
 // const button = styled.button`
@@ -61,7 +60,7 @@ const App = () => {
 //   cursor: pointer;
 /* <label>
   {' '}
-  */ /* <input type="text" value={hue} onChange={() => setLuminosity()} /> */
+  */
 
 // </label>; */}
 // </form>
@@ -71,4 +70,3 @@ const App = () => {
 //   {''}
 // </label>
 // </form>
-export default App;
