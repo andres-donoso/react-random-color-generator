@@ -31,7 +31,7 @@ const App = () => {
     <div className="App">
       <div
         style={{
-          backgroundColor: hex,
+          backgroundColor: { hex },
           minHeight: '33.34vh',
           overflow: 'hidden',
           zoom: 3,
@@ -39,8 +39,8 @@ const App = () => {
       >
         <h1>Random Color Generator</h1>
         <button onClick={() => setHex(randomColor())}>Generate</button>
-        Generated Color: {hex}
       </div>
+      Generated Color: {hex}
     </div>
   );
 };
