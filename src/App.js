@@ -37,8 +37,9 @@ const App = () => {
           zoom: 3,
         }}
       >
-        <h1>Random Color Generator</h1>
+        {' '}
         Generated Color: {hex}
+        <h1>Random Color Generator</h1>
         <button onClick={() => setHex(randomColor())}>Generate</button>
       </div>
     </div>
