@@ -8,18 +8,18 @@ const App = () => {
   // const [luminosity, setLuminosity] = useState('');
   // const [hue, setHue] = useState('');
 
-  const randomizedHex = () => {
-    const color = randomColor();
-    // luminosity: process.argv[2],
-    // hue: process.argv[3],
+  // const randomizedHex = () => {
+  //   const color = randomColor();
+  // luminosity: process.argv[2],
+  // hue: process.argv[3],
 
-    // const color = getRandomColor(), {
-    //   color = "hsl(" + Math.random() * 360 + ", 100%, 75%)"
-    //   return color;
-    setHex(color);
-    // setLuminosity(process.argv[2]);
-    // setHue(process.argv[3]);
-  };
+  // const color = getRandomColor(), {
+  //   color = "hsl(" + Math.random() * 360 + ", 100%, 75%)"
+  //   return color;
+  // setHex(color);
+  // setLuminosity(process.argv[2]);
+  // setHue(process.argv[3]);
+  // };
 
   // });
   // const luminosity =
@@ -43,7 +43,7 @@ const App = () => {
         }}
       >
         <h1>Random Color Generator</h1>
-        <button onClick={randomizedHex}>Generate</button>
+        <button onClick={() => setHex(randomColor())}>Generate</button>
         Generated Color: {hex}
       </div>
     </div>
