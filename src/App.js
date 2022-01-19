@@ -38,9 +38,9 @@ const App = () => {
         }}
       >
         <h1>Random Color Generator</h1>
+        Generated Color: {hex}
         <button onClick={() => setHex(randomColor())}>Generate</button>
       </div>
-      Generated Color: {hex}
     </div>
   );
 };
