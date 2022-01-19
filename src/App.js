@@ -44,8 +44,8 @@ const App = () => {
       >
         <h1>Random Color Generator</h1>
         <button onClick={randomizedHex}>Generate</button>
+        Generated Color: {hex}
       </div>
-      Generated Color: {hex}
     </div>
   );
 };
