@@ -43,7 +43,6 @@ const App = () => {
         <button onClick={randomizedHex}>Generate</button>
         <button>Generated Color: {hex}</button>
       </div>
-      >
     </div>
   );
 };
@@ -57,20 +56,11 @@ const App = () => {
 //   /* text-transform: uppercase; */
 //   margin: 10px 0px;
 //   cursor: pointer;
-//   box-shadow: 0px 2px 2px lightgray;
-//   transition: ease background-color 250ms;
-//   &: :disabled {
-//     cursor: default;
-//     opacity: 0.7;}
-// `;
+/* <label>
+  {' '}
+  */ /* <input type="text" value={hue} onChange={() => setLuminosity()} /> */
 
-/* <form>
-<label> */
-
-/* <input type="text" value={hue} onChange={() => setLuminosity()} /> */
-
-//   {''}
-// </label>
+// </label>; */}
 // </form>
 // <form>
 // <label>
