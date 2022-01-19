@@ -2,7 +2,8 @@ import './App.css';
 // import chalk from 'chalk';
 import randomColor from 'randomcolor';
 import React, { useState } from 'react';
-import styled from 'styled-components';
+
+// import styled from 'styled-components';
 
 const App = () => {
   const [hex, setHex] = useState('');
@@ -32,7 +33,7 @@ const App = () => {
     <div
       className="App"
       style={{
-        backgroundColor: `${hex}`,
+        backgroundColor: hex,
         minHeight: '33.34vh',
         overflow: 'hidden',
         zoom: 3,
@@ -40,21 +41,10 @@ const App = () => {
     >
       <h1>{hex}</h1>
       <button onClick={randomizedHex}>Generate</button>
-      <form>
-        <label>
-          {/* <input type="text" value={hue} onChange={() => setLuminosity()} /> */}
-          {''}
-        </label>
-      </form>
-      <form>
-        <label>
-          {/* <input type="text" value={luminosity} onChange={() => setHue()} /> */}
-          {''}
-        </label>
-      </form>
+
       <button
         style={{
-          backgroundColor: `${hex}`,
+          backgroundColor: hex,
         }}
       >
         Generated Color: {hex}
@@ -78,4 +68,19 @@ const App = () => {
 //     cursor: default;
 //     opacity: 0.7;}
 // `;
+
+/* <form>
+<label> */
+
+/* <input type="text" value={hue} onChange={() => setLuminosity()} /> */
+
+//   {''}
+// </label>
+// </form>
+// <form>
+// <label>
+/* <input type="text" value={luminosity} onChange={() => setHue()} /> */
+//   {''}
+// </label>
+// </form>
 export default App;
