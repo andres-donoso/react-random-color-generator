@@ -4,7 +4,7 @@ import randomColor from 'randomcolor';
 import React, { useState } from 'react';
 
 const App = () => {
-  const [hex, setHex] = useState('');
+  const [hex, setHex] = useState('#ffffff');
   // const [luminosity, setLuminosity] = useState('');
   // const [hue, setHue] = useState('');
 
@@ -28,17 +28,16 @@ const App = () => {
   // '#' + Math.floor(Math.random() * 16777215).toString(16);
 
   return (
-    <div
-      className="App"
-      style={{
-        backgroundColor: hex,
-        minHeight: '33.34vh',
-        overflow: 'hidden',
-        zoom: 3,
-      }}
-    >
-      <div style={{ backgroundColor: hex }}>
-        <h1>{hex}</h1>
+    <div className="App">
+      <div
+        style={{
+          backgroundColor: hex,
+          minHeight: '33.34vh',
+          overflow: 'hidden',
+          zoom: 3,
+        }}
+      >
+        <h1>Random Color Generator</h1>
         <button onClick={randomizedHex}>Generate</button>
         <button>Generated Color: {hex}</button>
         Generated Color: {hex}
