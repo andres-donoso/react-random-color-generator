@@ -3,8 +3,6 @@ import './App.css';
 import randomColor from 'randomcolor';
 import React, { useState } from 'react';
 
-// import styled from 'styled-components';
-
 const App = () => {
   const [hex, setHex] = useState('');
   // const [luminosity, setLuminosity] = useState('');
