@@ -38,10 +38,10 @@ const App = () => {
       }}
     >
       <div style={{ backgroundColor: hex }}>
-        Generated Color: {hex}
         <h1>{hex}</h1>
         <button onClick={randomizedHex}>Generate</button>
         <button>Generated Color: {hex}</button>
+        Generated Color: {hex}
       </div>
     </div>
   );
