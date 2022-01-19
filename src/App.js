@@ -45,7 +45,7 @@ const App = () => {
           backgroundColor: hex,
         }}
       >
-        Generated Color: {hex}
+        <div> Generated Color: {hex}</div>
       </button>
     </div>
   );
