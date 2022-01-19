@@ -28,7 +28,12 @@ const App = () => {
   // '#' + Math.floor(Math.random() * 16777215).toString(16);
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        backgroundColor: hex,
+      }}
+    >
       <div
         style={{
           backgroundColor: hex,
